@@ -10,7 +10,7 @@ int main() {
 
     FILE* f = fopen(OUTFILE, "w");
 
-    turmite_t t = {
+    termite_t t = {
             .x = 1,
             .y = 1,
             .state = ZERO,

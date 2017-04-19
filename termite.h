@@ -11,12 +11,12 @@ typedef unsigned int uint;
 
 typedef enum estate_t {ZERO, ONE, TWO} state_t;
 
-typedef struct turmite {
+typedef struct termite {
     uint grid[GRID_SIZE][GRID_SIZE];
     uint x;
     uint y;
     state_t state;
-} turmite_t;
+} termite_t;
 
-int tick(turmite_t*);
-void display(FILE*, turmite_t*);
+int tick(termite_t*);
+void display(FILE*, termite_t*);
