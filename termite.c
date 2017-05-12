@@ -49,10 +49,13 @@ int tick(termite_t* t) {
     }
 }
 
-void display(FILE*f, termite_t* t) {
-    for (int i = GRID_SIZE - 1; i >= 2; i--) {
-        for (int j = GRID_SIZE - 6; j > 0; j--) {
-            fprintf(f, "%d", t->grid[j][i]);
+void display(FILE*f, termite_t* t, bool newlines) {
+    for (int i = GRID_SIZE - 29; i >= 2; i--) {
+        for (int j = GRID_SIZE - 30; j >= 1; j--) {
+            fprintf(f, "%d ", t->grid[j][i]);
+        }
+        if (newlines) {
+            fprintf(f, "\n");
         }
     }
 }

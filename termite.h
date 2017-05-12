@@ -4,8 +4,9 @@
 
 #pragma once
 #include <stdio.h>
+#include <stdbool.h>
 
-#define GRID_SIZE 10
+#define GRID_SIZE 50
 
 typedef unsigned int uint;
 
@@ -19,4 +20,4 @@ typedef struct termite {
 } termite_t;
 
 int tick(termite_t*);
-void display(FILE*, termite_t*);
+void display(FILE*, termite_t*,bool);
